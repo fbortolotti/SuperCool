@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var logofigo: UIImageView!
+    
+    @IBOutlet weak var firzzante: UIImageView!
+    
+    @IBOutlet weak var bottone: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +27,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func schiscia(sender: AnyObject) {
+    logofigo.hidden = false
+    firzzante.hidden = false
+    bottone.hidden = true
+        
+    }
 
 }
 
